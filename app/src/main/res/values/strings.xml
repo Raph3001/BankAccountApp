@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BankAccountApp</string>
+    <string name="avail">overdraft:       </string>
+    <string name="transfer">Transfer To</string>
+</resources>

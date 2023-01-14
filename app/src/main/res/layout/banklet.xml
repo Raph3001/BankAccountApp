@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tv"
+    android:layout_width="match_parent"
+    android:layout_height="200sp"
+    android:layout_margin="10sp">
+
+    <ImageView
+        android:id="@+id/ivTypeImage"
+        android:layout_width="35sp"
+        android:layout_height="35sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="3sp"
+        android:layout_marginTop="3sp"
+        android:layout_marginEnd="3sp"
+        android:layout_marginBottom="3sp"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/tvTypeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="4sp"
+        android:layout_marginTop="4sp"
+        android:layout_marginEnd="4sp"
+        android:layout_marginBottom="4sp"
+        android:text="Student-Account"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvIBAN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTypeTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="4sp"
+        android:layout_marginTop="4sp"
+        android:layout_marginEnd="4sp"
+        android:layout_marginBottom="4sp"
+        android:text="IBAN: AT29-1111-2222-3333-4444-5555"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvIBAN"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="4sp"
+        android:layout_marginTop="4sp"
+        android:layout_marginEnd="4sp"
+        android:layout_marginBottom="4sp"
+        android:text="5000€"
+        android:textColor="#4CAF50"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvIgnore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBalance"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8sp"
+        android:layout_marginStart="4sp"
+        android:layout_marginTop="4sp"
+        android:layout_marginEnd="4sp"
+        android:layout_marginBottom="4sp"
+        android:text="----------------------------------------------------------------------------" />
+
+    <TextView
+        android:id="@+id/tvAvailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvIgnore"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8sp"
+        android:layout_marginTop="8sp"
+        android:layout_marginEnd="8sp"
+        android:layout_marginBottom="8sp"
+        android:text="Available:                                      5000€" />
+</RelativeLayout>
